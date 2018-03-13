@@ -1,0 +1,59 @@
+/*center the body*/
+
+body {
+    text-align: center;
+}
+
+.Banner img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ButtonList {
+    
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+
+}
+
+.ButtonList a{
+
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.ButtonList button {
+    
+    margin: 0 auto;
+    float: center;
+    border: 0px solid;
+    background-color: white;
+    border-radius: 0px;              /*forma border-ului */                    /*distanta dintre border si text*/   
+    font-weight: 800;   /*800 for bold*/
+}
+
+
+
+.ButtonList button:hover{
+    background-color: black;
+}
+
+.ButtonList button:hover a{
+    color: white;
+}
+
+
+
+
+
+
+
+
