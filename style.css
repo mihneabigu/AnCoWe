@@ -46,12 +46,24 @@ body {
     font-weight: 800;  
 }
 
+.ButtonList button.Active {
+    background-color: lightgray;
+}
+
+.ButtonList button.Active:hover {
+    background-color: lightgray;
+}
+
 .ButtonList button:hover{
     background-color: black;
 }
 
 .ButtonList button:hover a{
     color: white;
+}
+
+.ButtonList button.Active:hover a{
+    color: black;
 }
 
 header nav{
@@ -76,17 +88,21 @@ header nav ul li a{
     
     }
 
-
-
+.wrapper{
+        margin-top: 0.6%;
+        margin-left:20%;
+        margin-bottom: 10%;
+        width:60%;
+}
 
 .about-box {
-    background-image: url("about-background.jpg");
+    background-image: url("img/about-background.jpg");
     height:1444px;
     text-align:left;
 }
 
 .rules-box {
-    background-image: url("russia2.gif");
+    background-image: url("img/russia2.gif");
     height:1444px;
     text-align:left;
 }
@@ -95,11 +111,4 @@ header nav ul li a{
     display: block;    
     margin: auto;
     padding: 10px;
-}
-
-.wrapper{
-    margin-top: 0.6%;
-    margin-left:20%;
-    margin-bottom: 10%;
-    width:60%;
 }
