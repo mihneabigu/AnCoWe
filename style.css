@@ -1,5 +1,32 @@
 /*center the body*/
 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+   
+}
+
+header {
+
+    width:100%;
+    height: 100%;
+}
+
 body {
     text-align: center;
 }
@@ -9,38 +36,15 @@ body {
     max-height: 100%;
 }
 
-.ButtonList {
-    
-    overflow: hidden;
-    background-color: white;
-    text-align: center;
-
-}
-
-.ButtonList a{
-
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    padding: 0px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-
 .ButtonList button {
     
     margin: 0 auto;
     float: center;
     border: 0px solid;
     background-color: white;
-    border-radius: 0px;              /*forma border-ului */                    /*distanta dintre border si text*/   
-    font-weight: 800;   /*800 for bold*/
+    border-radius: 0px;            
+    font-weight: 800;  
 }
-
-
 
 .ButtonList button:hover{
     background-color: black;
@@ -50,10 +54,52 @@ body {
     color: white;
 }
 
+header nav{
+
+    width:100%;
+    height:100%;
+    background-color:#fff;
+}
+
+header nav ul li{
+    display:inline-block;
+}
+
+header nav ul li a{
+
+   
+    color: black;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    }
 
 
 
 
+.about-box {
+    background-image: url("about-background.jpg");
+    height:1444px;
+    text-align:left;
+}
 
+.rules-box {
+    background-image: url("russia2.gif");
+    height:1444px;
+    text-align:left;
+}
 
+.rules-video {
+    display: block;    
+    margin: auto;
+    padding: 10px;
+}
 
+.wrapper{
+    margin-top: 0.6%;
+    margin-left:20%;
+    margin-bottom: 10%;
+    width:60%;
+}
