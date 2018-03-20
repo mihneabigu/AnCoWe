@@ -142,5 +142,114 @@ header nav ul li a{
 }
 
 section{
-    padding-top: 190px;
+    padding-top: 19%;
+}
+
+
+nav .dropdown {
+   display: inline-block;
+   position:relative;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+  
+    width:300px;
+    text-align:left;
+    
+}
+
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+nav .dropdown-content button {
+    
+    margin: 0 auto;
+   
+    border: 0px solid;
+    width:150px;
+    background-color: white;
+    border-radius: 0px;            
+    font-weight: 800;  
+    
+}
+
+nav .dropdown-content a{
+ 
+float:left;
+
+}
+
+
+header nav .dropdown-content a{
+
+   
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    }
+
+
+
+
+.left-portrait {
+    float: left;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    height: 280px;
+    width: 230px; 
+
+    
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -webkit-transform 0.3s ease-out;
+}
+    
+.left-portrait:hover {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+}
+    
+.left-text {
+   padding-top:10%;
+   padding-left: 27%;
+   padding-right: 3%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: larger;
+}
+    
+.right-portrait {
+    float: right;
+    padding-top: 4%;
+    padding-right: 3%;
+    height: 280px;
+    width: 230px; 
+
+    
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -webkit-transform 0.3s ease-out;
+}
+    
+.right-portrait:hover {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+}
+    
+.right-text {
+    padding-top:10%;
+    padding-right: 27%;
+    padding-left: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
 }
