@@ -3,36 +3,41 @@
     <head>
 
         <link rel="stylesheet" href="style.css">
-
+        <title>Garbage</title>
+        <meta charset="UTF-8">
     </head>
+    
 
 
-    <body background="img/4228-texture.jpg">
+    <body >
 
         <header>
                 <div class="Banner">
-                    <img src="img/banner.jpg">
+                    <img src="img/bannerAux.jpg" alt="img/banner.jpg">
                   
                 </div>
 
                 <nav class="ButtonList">
                    
                         <ul>
-                            <li><button class="Active"><a href="index.html">HOME</a></button> |</li>
-                            <li><button><a href="play.html">PLAY</a></button> |</li>
-                            <li><button><a href="Rules.html">RULES</a></button> |</li>
-                            <li><button><a href="scoreboard.html">SCOREBOARD</a></button> |</li> 
-                            <div class="dropdown">
-                            <li><button class="dropbtn"><a>ABOUT</a></button> |
-                                <div class="dropdown-content">
-                                    <ul> 
-                                        <li><button><a href="OurTeam.html">Our Team</a></button></li>
-                                        <li><button><a href="Gamelore.html">Game Lore</a></button></ul></li>
-                                   
-                                </div></li>
+                            <li><a href="index.html" class="Active" >HOME</a> |</li>
+                            <li><a href="play.html" onclick="window.open('img/gameplay.jpg', 'newwindow', 'width=700,height=700'); return false;">PLAY</a> |</li>
+                            <li><a href="Rules.html">RULES</a> |</li>
+                            <li><a href="scoreboard.html">SCOREBOARD</a> |</li> 
+                            
+                                <li class="dropdown"><a>ABOUT</a> |
+                                    
+                                        <ul class="dropdown-content"> 
+                                            <li><a href="OurTeam.html">Our Team</a></li>
+                                            <li><a href="GameLore.html">Game Lore</a></li>
+                                        </ul>
+                                    
+                                    
+                                </li>
                                 
-                            </div>
-                            <li><button><a href="https://github.com/mihneabigu/AnCoWe" target="_blank">GITHUB</a></button></li>
+                            
+
+                            <li><a href="https://github.com/mihneabigu/AnCoWe" target="_blank">GITHUB</a></li>
                         </ul>
                     
                 </nav>
