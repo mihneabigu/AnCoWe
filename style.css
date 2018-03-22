@@ -29,7 +29,7 @@ header {
 
 body {
     text-align: center;
-    background-image: url("img/4228-texture.jpg");
+    background-image: url("img/backgroundFinal.jpg");
 }
 
 
@@ -116,7 +116,7 @@ header nav ul li a{
 
 
 .wrapper{
-        margin-top: 0.6%;
+        margin-top: 0.2%;
         margin-left:20%;
         margin-bottom: 10%;
         width:60%;
@@ -128,9 +128,15 @@ header nav ul li a{
     text-align:left;
 }
 
+.about-box-lore{
+    height: 400px;
+    text-align: center;
+    background-image: url("img/about-background.jpg");
+}
+
 .rules-box {
     background-image: url("img/about-background.jpg");
-    height:1444px;
+    height:700px;
     text-align:left;
 }
 
@@ -143,7 +149,7 @@ header nav ul li a{
 }
 
 section{
-    padding-top: 19%;
+    padding-top: 15%;
 }
 
 
