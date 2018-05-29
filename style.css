@@ -29,77 +29,80 @@ header {
 
 body {
     text-align: center;
-    background-image: url("img/backgroundFinal.jpg");
 }
 
 
 
 .Banner img{
-    
     max-width: 100%;
-    max-height: 20%;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    
+    max-height: 80%;
     position: fixed;
-    display: block;
 }
 
 .Banner{
-    
     position: fixed;
-    margin-top: 0%;
-    vertical-align: middle;
-    
+    margin-top: -2%;
+
 }
 
 .ButtonList{
     position: fixed;
-    margin-top: 10%;
-    
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 17%;
 
 }
 
-.ButtonList a {
+.ButtonList button {
     
     margin: 0 auto;
-    float: initial;
+    float: center;
     border: 0px solid;
     background-color: white;
     border-radius: 0px;            
     font-weight: 800;  
 }
 
-.ButtonList a.Active{
+.ButtonList button.Active {
     background-color: lightgray;
 }
 
-.ButtonList a.Active:hover{
-    color: black;
+.ButtonList button.Active:hover {
     background-color: lightgray;
 }
 
-.ButtonList a:hover  {
-    color: white;
+.ButtonList button:hover{
     background-color: black;
 }
 
+.ButtonList button:hover a{
+    color: white;
+}
 
+.ButtonList button.Active:hover a{
+    color: black;
+}
+
+/* .ButtonList {
+    position: fixed;
+    top: 37%;
+}
+
+.Banner{
+    position: fixed;
+    margin-top: -10px;
+
+} */
 
 
 
 header nav{
 
     width:100%;
-    height:fit-content;
+    height:350;
     background-color:rgb(255, 255, 255);
 }
 
 header nav ul li{
     display:inline-block;
-    
 }
 
 header nav ul li a{
@@ -113,10 +116,8 @@ header nav ul li a{
     
     }
 
-
-
 .wrapper{
-        margin-top: 0.2%;
+        margin-top: 0.6%;
         margin-left:20%;
         margin-bottom: 10%;
         width:60%;
@@ -128,15 +129,9 @@ header nav ul li a{
     text-align:left;
 }
 
-.about-box-lore{
-    height: 400px;
-    text-align: center;
-    background-image: url("img/about-background.jpg");
-}
-
 .rules-box {
     background-image: url("img/about-background.jpg");
-    height:700px;
+    height:1444px;
     text-align:left;
 }
 
@@ -144,12 +139,10 @@ header nav ul li a{
     display: block;    
     margin: auto;
     padding: 10px;
-    border: 0;
-    
 }
 
 section{
-    padding-top: 15%;
+    padding-top: 20%;
 }
 
 
@@ -169,11 +162,11 @@ nav .dropdown-content {
 
 
 nav .dropdown:hover .dropdown-content {
-    display: grid;
+    display: block;
     
 }
 
-nav .dropdown-content a {
+nav .dropdown-content button {
     
     margin: 0 auto;
    
@@ -192,8 +185,6 @@ float:left;
 }
 
 
-
-
 header nav .dropdown-content a{
 
    
@@ -204,113 +195,3 @@ header nav .dropdown-content a{
     font-family: 'Courier New', Courier, monospace;
     
     }
-
-
-
-
-.left-portrait {
-    float: left;
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-bottom: 5%;
-    height: 280px;
-    width: 230px; 
-
-    transition: transform 0.3s ease-out;
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -webkit-transform 0.3s ease-out;
-    -o-transition: -webkit-transform 0.3s ease-out;
-}
-    
-.left-portrait:hover {
-    transform: rotate(4deg);
-    -webkit-transform: rotate(4deg);
-    -moz-transform: rotate(4deg);
-    -o-transform: rotate(4deg);
-}
-    
-.left-text {
-   padding-top:10%;
-   padding-left: 27%;
-   padding-right: 3%;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: larger;
-}
-    
-.right-portrait {
-    float: right;
-    padding-top: 4%;
-    padding-right: 3%;
-    height: 280px;
-    width: 230px; 
-
-    transition: transform 0.3s ease-out;
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -webkit-transform 0.3s ease-out;
-    -o-transition: -webkit-transform 0.3s ease-out;
-}
-    
-.right-portrait:hover {
-    transform: rotate(4deg);
-    -webkit-transform: rotate(-4deg);
-    -moz-transform: rotate(-4deg);
-    -o-transform: rotate(-4deg);
-}
-    
-.right-text {
-    padding-top:10%;
-    padding-right: 27%;
-    padding-left: 3%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
-}
-
-.score-board-box{
-    margin-top: 0.6%;
-    margin-left:35%;
-    margin-bottom: 10%;
-    width:30%;
-    background-image: url("img/about-background.jpg");
-    height:1444px;
-    padding-top:30px;
-    
-}
-
-
-.score-board-box table.center {
-   
-    margin:0 auto;
-   
-    
-  }
-
-
-.score-board-box table th.col1{
-
-text-align:right;
-
-}
-.score-board-box table th.col2{
-
-text-align:left;
-border-left: 2px solid;
-padding:0px 2px;
-}
-
-
-.score-board-box table{
-border-collapse: collapse;
-font-size:30px;
-}
-
-.score-board-box table th.col1{
-
-
-padding:0px 3px;
-
-}
-
-.score-board-box table th.l1{
-
-border-bottom: 2px solid;
-}
