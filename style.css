@@ -121,6 +121,7 @@ header nav ul li a{
         margin-left:20%;
         margin-bottom: 10%;
         width:60%;
+        position: absolute;
 }
 
 .about-box {
@@ -147,13 +148,6 @@ section{
     background-repeat: repeat-y;
     background-position: center;
     background-size: 65%;*/
-}
-
-.content-box{
-    background-color: white;
-    padding-top: 4%;
-    height: 100%;
-    max-width: 100%;
 }
 
 
@@ -197,14 +191,47 @@ float:left;
 
 
 header nav .dropdown-content a{
-
-   
     color: black;
     padding: 0px 0px;
     text-decoration: none;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
-    
     }
 
-    
+    label {
+        font-weight:bold;
+        width:100px;
+        font-size:14px;
+    }
+    .box {
+        border:#666666 solid 1px;
+    }
+
+    .row {
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -300px;
+    }
+
+    .column-center {
+        margin-right: 50px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .column {
+        margin-right: 50px;
+        width: 20%;
+        max-width: 19%;
+        float: left;
+    }
+
+.content-box{
+    background-color: white;
+    padding-top: 1%;
+    height: 100%;
+    max-width: 100%;
+}
