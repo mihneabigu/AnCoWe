@@ -22,10 +22,13 @@ time, mark, audio, video {
 }
 
 header {
-
+    vertical-align:middle; 
+    position: fixed;
     width:100%;
     height: 100%;
     padding-bottom: 13%;
+    margin-top: 2%;
+    z-index: 10;
 }
 
 body {
@@ -117,7 +120,7 @@ header nav ul li a{
     }
 
 .wrapper{
-        margin-top: 0.6%;
+        margin-top: 15%;
         margin-left:20%;
         margin-bottom: 10%;
         width:60%;
@@ -223,6 +226,7 @@ header nav .dropdown-content a{
     }
 
     .column {
+        margin-top: 15%;
         margin-right: 50px;
         width: 20%;
         max-width: 19%;

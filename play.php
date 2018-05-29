@@ -31,7 +31,7 @@
         } 
         else { ?>
 
-        <div  id="LoginDiv" class="column" style = "width:300px; border: solid 2px Black; background-color:white " align = "left">
+        <div  id="LoginDiv" class="column" style = "width:300px; border: solid 2px Black; background-color:white; position: fixed " align = "left">
             <div style = "background-color:Gray; color:#FFFFFF; padding:3px;"><b>Login</b>
             </div>
     
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div  id="RegisterDiv" class="column" style = "width:300px; border: solid 2px Black; background-color:white; display: none;" align = "left">
+        <div  id="RegisterDiv" class="column" style = "width:300px; border: solid 2px Black; background-color:white; display: none; position: fixed" align = "left">
             <div style = "background-color:Gray; color:#FFFFFF; padding:3px;"><b>Register</b>
             </div>
     
