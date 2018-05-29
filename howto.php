@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <?php session_start(); $_SESSION['loggedin'] = false;?> 
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
+        <?php session_start(); $_SESSION['loggedin'] = false;?>
     </head>
 
 

@@ -1,0 +1,237 @@
+/*center the body*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+   
+}
+
+header {
+
+    width:100%;
+    height: 100%;
+    padding-bottom: 13%;
+}
+
+body {
+    text-align: center;
+}
+
+
+
+.Banner img{
+    max-width: 100%;
+    max-height: 50%;
+    position: fixed;
+}
+
+.Banner{
+    position: fixed;
+    margin-top: -7%;
+}
+
+.ButtonList{
+    position: fixed;
+    margin-top: 10%;
+
+}
+
+.ButtonList button {
+    
+    margin: 0 auto;
+    float: center;
+    border: 0px solid;
+    background-color: white;
+    border-radius: 0px;            
+    font-weight: 800;  
+}
+
+.ButtonList button.Active {
+    background-color: lightgray;
+}
+
+.ButtonList button.Active:hover {
+    background-color: lightgray;
+}
+
+.ButtonList button:hover{
+    background-color: black;
+}
+
+.ButtonList button:hover a{
+    color: white;
+}
+
+.ButtonList button.Active:hover a{
+    color: black;
+}
+
+/* .ButtonList {
+    position: fixed;
+    top: 37%;
+}
+
+.Banner{
+    position: fixed;
+    margin-top: -10px;
+
+} */
+
+
+
+header nav{
+
+    width:100%;
+    height:350;
+    background-color:rgb(255, 255, 255);
+}
+
+header nav ul li{
+    display:inline-block;
+}
+
+header nav ul li a{
+
+   
+    color: black;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    }
+
+.wrapper{
+        margin-top: 0.6%;
+        margin-left:20%;
+        margin-bottom: 10%;
+        width:60%;
+        position: absolute;
+}
+
+.about-box {
+    background-image: url("img/about-background.jpg");
+    height:1444px;
+    text-align:left;
+}
+
+.rules-box {
+    background-image: url("img/about-background.jpg");
+    height:1444px;
+    text-align:left;
+}
+
+.rules-video {
+    display: block;    
+    margin: auto;
+    padding: 10px;
+}
+
+section{
+    padding-top: 2%;
+    /*background-image: url(img/content-bg.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 65%;*/
+}
+
+
+nav .dropdown {
+   display: inline-block;
+   position:relative;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+  
+    width:300px;
+    text-align:left;
+    
+}
+
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+nav .dropdown-content button {
+    
+    margin: 0 auto;
+   
+    border: 0px solid;
+    width:150px;
+    background-color: white;
+    border-radius: 0px;            
+    font-weight: 800;  
+    
+}
+
+nav .dropdown-content a{
+ 
+float:left;
+
+}
+
+
+header nav .dropdown-content a{
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+    label {
+        font-weight:bold;
+        width:100px;
+        font-size:14px;
+    }
+    .box {
+        border:#666666 solid 1px;
+    }
+
+    .row {
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -300px;
+    }
+
+    .column-center {
+        margin-right: 50px;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .column {
+        margin-right: 50px;
+        width: 20%;
+        max-width: 19%;
+        float: left;
+    }
+
+.content-box{
+    background-color: white;
+    padding-top: 1%;
+    height: 100%;
+    max-width: 100%;
+}
