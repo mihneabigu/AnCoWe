@@ -16,7 +16,7 @@
                 <nav class="ButtonList">
                    
                         <ul>
-                            <li><button class="Active"><a href="index.html">HOME</a></button> |</li>
+                            <li><button class="Active"><a href="index.php">HOME</a></button> |</li>
                             <li><button><a href="play.html">PLAY</a></button> |</li>
                             <li><button><a href="howto.html">HOW-TO</a></button> |</li>
                             <li><button><a href="scoreboard.html">SCOREBOARD</a></button> |</li>
