@@ -14,11 +14,18 @@
         <li><a href="#">Scoreboard</a></li>
         <li><a href="#">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
-            <li style="float:right"><a href="#">Logout</a></li>
+            <li style="float:right"><a href="?logout">Logout</a></li>
         <?php } else { ?>
             <li style="float:right"><a href="login.php">Login</a></li>
         <?php }; ?>
     </ul>
+
+    <?php if(isset($_GET['logout'])) {
+        session_unset();
+        session_destroy();
+        header("location:index.php");
+        exit();
+    }; ?>
 </head>
 
 <body>
