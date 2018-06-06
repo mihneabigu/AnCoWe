@@ -28,10 +28,10 @@
     }; ?>
 </head>
 
-<body>
+<body background="img/bg.jpg">
 
 <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
-  <p align=right style="float:right">Welcome, <?php echo $_SESSION['login_user']?>~</p>
+  <p align=right style="float:right; color:white">Welcome, <?php echo $_SESSION['login_user']?>~</p>
 <?php }; ?>
 
 <div class="wrapper">
@@ -54,6 +54,9 @@ The Father Superior listened to him with diginity, and, with a slight bend of th
 
 
 
-<hr><a href="https://github.com/mihneabigu/AnCoWe"><h5 style="text-align:center"><img src="/img/git.png" style="max-width:3%;max-height:3%"></h3></a>
+<hr>
+<div style="background-color:rgb(209, 152, 98);">
+<a href="https://github.com/mihneabigu/AnCoWe"><h5 style="text-align:center"><img src="/img/git.png" style="max-width:3%;max-height:3%"></h3></a>
+</div>
 </body>
 </html>

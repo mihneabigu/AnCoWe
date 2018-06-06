@@ -34,16 +34,19 @@
 
 </head>
 
-<body onload = "init();">
+<body onload = "init();" background="img/bg.jpg">
 
 <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
-  <p align=right style="float:right">Welcome, <?php echo $_SESSION['login_user']?>~</p>
+  <p align=right style="float:right; color:white">Welcome, <?php echo $_SESSION['login_user']?>~</p>
 <?php }; ?>
 
 <div class="wrapper" style="background:none">
     <canvas tabindex='1' id="game" width="800" height="500" style="margin-left:-130px;border:1px solid #000000;"></canvas>
 </div>
 
-<hr><a href="https://github.com/mihneabigu/AnCoWe"><h5 style="text-align:center"><img src="/img/git.png" style="max-width:3%;max-height:3%"></h3></a>
+<hr>
+<div style="background-color:rgb(209, 152, 98);">
+<a href="https://github.com/mihneabigu/AnCoWe"><h5 style="text-align:center"><img src="/img/git.png" style="max-width:3%;max-height:3%"></h3></a>
+</div>
 </body>
 </html>

@@ -10,7 +10,7 @@
     ?>
 </head>
 
-<body>
+<body background="img/bg.jpg">
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -32,7 +32,7 @@
 ?>
 
 <div class="row">
-    <div  class="column" style = "width:300px; border: solid 1px #333333; " align = "left">
+    <div  class="column" style = "width:300px; border: solid 1px #333333; background-color:bisque" align = "left">
         <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
 
         <div style = "margin:30px">
