@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             <input type = "submit" value = " Submit "/><br />
         </form>
 
-        <br> If you want to go back to the login page, click <a href="index.php">here</a>
+        <br> If you want to go back to the login page, click <a href="login.php">here</a>
 
         <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 
