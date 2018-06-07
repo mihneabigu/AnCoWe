@@ -5,15 +5,21 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-style: solid;
+    border-width: medium;
+    font-size: 15px;
+    font-family: Arial Black;
 }
 
 li {
     float: left;
-    border-right:1px solid #bbb;
+    border-right:5px solid #bbb;
 }
 
 li:last-child {
     border-right: none;
+    border-left: 5px solid #bbb;
+    background-color:rgb(136, 84, 36);
 }
 
 li a {
@@ -41,6 +47,19 @@ li a:hover:not(.active) {
     padding-top: 2%;
     padding-bottom: 2%;
     margin: auto;
+    margin-top: 1%;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 10%;
+}
+
+/*footer*/
+.footer {
+    margin:auto;
+    background-color: brown;
+    width: 100%;
+    border-style: solid;
+    border-width: medium;
     margin-top: 1%;
 }
 

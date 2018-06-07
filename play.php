@@ -17,7 +17,7 @@
         <li><a class="active" href="play.php">Play</a></li>
         <li><a href="#">How-To</a></li>
         <li><a href="#">Scoreboard</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li style="float:right"><a href="#">Logout</a></li>
         <?php } else { ?>
@@ -40,13 +40,14 @@
   <p align=right style="float:right; color:white">Welcome, <?php echo $_SESSION['login_user']?>~</p>
 <?php }; ?>
 
-<div class="wrapper" style="background:none">
-    <canvas tabindex='1' id="game" width="800" height="500" style="margin-left:-130px;border:1px solid #000000;"></canvas>
+<div class="wrapper" style="background:none; border:none;">
+    <canvas tabindex='1' id="game" width="800" height="500" style="margin-left:-95px;border:5px solid #000000;"></canvas>
 </div>
 
-<hr>
-<div style="background-color:rgb(209, 152, 98);">
-<a href="https://github.com/mihneabigu/AnCoWe"><h5 style="text-align:center"><img src="/img/git.png" style="max-width:3%;max-height:3%"></h3></a>
+<div class="footer">
+    <a href="https://github.com/mihneabigu/AnCoWe">
+        <h5 style="text-align:center"><img src="/img/git.png" style="margin-top:-10px;margin-bottom:-10px;max-width:3%;max-height:3%"></h3>
+    </a>
 </div>
 </body>
 </html>

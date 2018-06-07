@@ -8,11 +8,11 @@
     <?php session_start();?>
 
     <ul>
-        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="play.php">Play</a></li>
         <li><a href="#">How-To</a></li>
         <li><a href="#">Scoreboard</a></li>
-        <li><a href="about.php">About</a></li>
+        <li><a class="active" href="about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li style="float:right"><a href="?logout">Logout</a></li>
         <?php } else { ?>
@@ -51,6 +51,8 @@ The Father Superior listened to him with diginity, and, with a slight bend of th
 
 </p>
 </div>
+
+
 
 
 <div class="footer">
