@@ -8,7 +8,7 @@ define(['State','Player','World'], function(State,Player,World){
         init:function( _handler ){
             this._super( _handler );  //call constructor of (base) State class
             this.player = new Player(_handler, 20, 20);
-            this.world = new World("res/worlds/world1.wrd");
+            this.world = new World("res/worlds/world1.wrd", _handler);
         },
 
         tick:function( _dt ){

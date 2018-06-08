@@ -3,7 +3,7 @@ define(['Class','TileLoader','Utils'],function(Class,Tile,Utils){
 
 
     var World = Class.extend({
-       init:function( _path ){
+       init:function( _path, _handler ){
            this.tiles = []; // multi dimensional array.
                             // but we cant make [][] in JS.
                             // we can make an array within an array
@@ -11,6 +11,7 @@ define(['Class','TileLoader','Utils'],function(Class,Tile,Utils){
            // this.width = 10;
            // this.height = 10;
            this.loadWorld( _path );
+           this.handler = _handler;
        },
         loadWorld( _path ){
                 //Generate map manually
@@ -45,7 +46,7 @@ define(['Class','TileLoader','Utils'],function(Class,Tile,Utils){
         render:function( _g ){
             for(y=0;y<this.height;y++){
                 for(x=0;x<this.width;x++){
-                    this.getTile(x,y).render( _g, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT);
+                    this.getTile(x,y).render( _g, x * Tile.TILEWIDTH - this.handler.getGameCamera().getxOffset(), y * Tile.TILEHEIGHT - this.handler.getGameCamera().getyOffset());
                 }
             }
 

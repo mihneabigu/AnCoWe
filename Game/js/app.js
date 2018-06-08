@@ -30,7 +30,9 @@ requirejs.config({
         "GrassTile" : "app/classes/tiles/GrassTile",
         "StoneTile" : "app/classes/tiles/StoneTile",
         "World" : "app/classes/worlds/World",
-        "Utils" : "app/classes/utils/Utils"
+        "Utils" : "app/classes/utils/Utils",
+
+        "GameCamera" : "app/classes/gfx/GameCamera"
 
     }
 });
