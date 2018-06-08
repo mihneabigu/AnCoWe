@@ -31,8 +31,8 @@ requirejs.config({
         "StoneTile" : "app/classes/tiles/StoneTile",
         "World" : "app/classes/worlds/World",
         "Utils" : "app/classes/utils/Utils",
-
-        "GameCamera" : "app/classes/gfx/GameCamera"
+        "GameCamera" : "app/classes/gfx/GameCamera",
+        "Rectangle" : "app/classes/gfx/shapes/rectangle"
 
     }
 });

@@ -12,7 +12,7 @@ define(['Class','TileLoader','Utils'],function(Class,Tile,Utils){
            // this.height = 10;
            this.loadWorld( _path );
            this.handler = _handler;
-           this.handler.setWorld(this);     //_handler.setWorld(this);
+           this.handler.setWorld(this); //_handler.setWorld(this);
 
        },
         loadWorld( _path ){

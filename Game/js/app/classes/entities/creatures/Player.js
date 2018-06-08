@@ -5,6 +5,10 @@ define(['Creature','Assets'],function(Creature,Assets){
         init:function(_handler, _x, _y){
             this._super(_handler, _x, _y,Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
             this.assets = Assets.getAssets('player');
+            this.bounds.x = 5;
+            this.bounds.y = 25;
+            this.bounds.width = 15;
+            this.bounds.height = 15;
 
         },
         tick:function(_dt){
@@ -17,6 +21,10 @@ define(['Creature','Assets'],function(Creature,Assets){
             _g.myDrawImage(this.assets.idle, this.x-this.handler.getGameCamera().getxOffset(), this.y-this.handler.getGameCamera().getyOffset(), this.assets.width, this.assets.height);
             //_g.myDrawImage(Assets.getAssets("mario").idle, x, y, Assets.getAssets('mario').width, Assets.getAssets('mario').height);
 
+
+            //this will make a black rectangle ON player, so I know when collision starts
+            _g.fillRect(this.x + this.bounds.x - this.handler.getGameCamera().getxOffset(), this.y + this.bounds.y - this.handler.getGameCamera().getyOffset(), this.bounds.width, this.bounds.height);
+                        //^this.x so it's relative to our character position
 
         },
         getInputs:function(_dt){
