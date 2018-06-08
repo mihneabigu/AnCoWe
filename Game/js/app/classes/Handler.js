@@ -3,7 +3,7 @@
 
 define(['Class'], function(Class){
 
-    var game;
+    var game,world;
 
     //now we create the actual class :
     var Handler = Class.extend({
@@ -21,6 +21,12 @@ define(['Class'], function(Class){
         },
         getGameCamera:function(){
              return game.getGameCamera();
+        },
+        getWorld:function(){
+            return world;
+        },
+        setWorld:function(_world){
+            world = _world;
         }
 
     });

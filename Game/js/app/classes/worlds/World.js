@@ -6,12 +6,14 @@ define(['Class','TileLoader','Utils'],function(Class,Tile,Utils){
        init:function( _path, _handler ){
            this.tiles = []; // multi dimensional array.
                             // but we cant make [][] in JS.
-                            // we can make an array within an array
+                            // SOL: we can make an array within an array
 
            // this.width = 10;
            // this.height = 10;
            this.loadWorld( _path );
            this.handler = _handler;
+           this.handler.setWorld(this);     //_handler.setWorld(this);
+
        },
         loadWorld( _path ){
                 //Generate map manually
@@ -53,6 +55,12 @@ define(['Class','TileLoader','Utils'],function(Class,Tile,Utils){
         },
         getTile:function(_x, _y){
            return Tile.tiles[this.tiles[_x][_y]];
+        },
+        getWidth:function(){
+            return this.width;
+        },
+        getHeight:function(){
+           return this.height;
         }
 
     });
