@@ -52,7 +52,7 @@
 
     <h1>"No one can win every battle, but no man should fail without a struggle!" - Peter Parker</h1>
     <img src="img/howToSpuder.gif" style="float: right; max-width: 20%; margin-top: -8%">
-    <h2 style="color:brown">GAMEPLAY</h2>
+    <h2 style="color:brown">GAMEPLAY</h2><hr color=black>
     <p style="font-size: 18px;">
     <strong>&#9830;Levels:</strong><br>
         The game consists of 5 levels.(rooms) Brace yourselves! 
@@ -73,7 +73,7 @@
 
     </p>
     <h2 style="color:brown">CONTROLS</h2>
-    <p style="font-size: 18px;border-style:solid;border-width:2px;border-radius:25%;padding:5%;text-align:center">
+    <p style="font-size: 18px;border-style:solid;border-width:1px;border-radius:25%;padding:5%;text-align:center">
         <strong>&#9830;Move:</strong><img src="img/move.png" style="width:10%">
         <strong>&#9830;Simple attack:</strong><img src="img/autoattack.png" style="width:5%">
         <br><strong>&#9830;Skills:</strong><img src="img/skills.png" style="width:25%">
