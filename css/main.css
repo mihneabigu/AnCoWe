@@ -1,4 +1,9 @@
 /*Header buttons & stuff*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -8,7 +13,7 @@ ul {
     border-style: solid;
     border-width: medium;
     font-size: 15px;
-    font-family: Arial Black;
+    font-family: Hack, monospace;
 }
 
 li {
@@ -52,9 +57,10 @@ li a:hover:not(.active) {
 
 .wrapper {
     background-color: bisque;
+    text-align: justify;
     max-width: 45%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
     margin: auto;
@@ -62,30 +68,49 @@ li a:hover:not(.active) {
     border-style: solid;
     border-width: medium;
     border-radius: 10%;
+
 }
 
 /*footer*/
 .footer {
     margin:auto;
+    position: absolute;
+    bottom: 0;
     background-color: brown;
-    width: 100%;
+    width: 99%;
     border-style: solid;
     border-width: medium;
-    margin-top: 1%;
+    overflow: hidden;
+    margin-bottom: 1%;
 }
 
 /*LOGIN REGISTER STUFF*/
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Hack, monospace;
     font-size:14px;
 }
 label {
     font-weight:bold;
     width:100px;
-    font-size:14px;
+    font-size:20px;
 }
+
+.loginRegisterBox {
+    font-size: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: bisque;
+    max-width: fit-content;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 3%;
+}
+
 .box {
     border:#666666 solid 1px;
+    width: 200px;
 }
 .row {
     position: absolute;

@@ -4,6 +4,7 @@
 <head>
     <title>zzz</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
     <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>

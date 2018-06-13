@@ -3,6 +3,7 @@
 <head>
     <title>zzz</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
     <?php
     include ("config.php");
     session_start();
@@ -34,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $username = $_POST['username'];
     $email = $_POST['email'];
     $stmt->execute();
-    echo $email;
     $result = $stmt->get_result();
     if ($result->num_rows > 0){
         $error = "Username or Email already in use";
@@ -48,22 +48,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
-<div class="row">
-<div  class="column" style = "width:300px; border: solid 1px #333333; background-color:bisque" align = "left">
-    <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Register</b></div>
+<div class="loginRegisterBox">
+    <div style = "background-color:#333333; color:#FFFFFF; padding:3px; text-align: center"><b>Register</b></div>
 
     <div style = "margin:30px">
 
         <form action = "" method = "post">
-            <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-            <label>E-Mail  :</label><br><input type="text" name = "email" class = "box" /><br/><br />
-            <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-            <input type = "submit" value = " Submit "/><br />
+            <label>UserName  : </label><input type = "text" name = "username" class = "box"/><br><br>
+            <label>E-Mail &emsp; : </label><input type="text" name = "email" class = "box" /><br><br>
+            <label>Password  : </label><input type = "password" name = "password" class = "box" /><br><br>
+            <input type = "submit" value = " Submit " style="font-size: 20px"/><br />
         </form>
 
-        <br> If you want to go back to the login page, click <a href="login.php">here</a>
+        <br>
 
-        <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+        <div style = "color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 
     </div>
 </div>

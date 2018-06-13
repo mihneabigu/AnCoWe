@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" href="img/favicon.ico" type="image/ico">
 
-    <?php session_start();
-        $var = "sdfsdf"?>
+    <?php
+        include ("config.php");
+        session_start();
+
+    ?>
 
     <ul>
-        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="play.php">Play</a></li>
         <li><a href="#">How-To</a></li>
-        <li><a href="#">Scoreboard</a></li>
+        <li><a class="active" href="scoreboard.php">Scoreboard</a></li>
         <li><a href="about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li style="float:right"><a href="?logout">Logout</a></li>
@@ -45,18 +48,18 @@
 
     <!-- <a href="#" onclick="callPHP('message=Salut')">call PHP script</a> -->
 
-<!--    <script>-->
-<!--        var x = document.getElementById("test");-->
-<!--        window.alert(x.textContent);-->
-<!--    </script>-->
+    <!--    <script>-->
+    <!--        var x = document.getElementById("test");-->
+    <!--        window.alert(x.textContent);-->
+    <!--    </script>-->
 
     <h1 style="font-size: 50px;">WELCOME, ADVENTURER! <img src="img/spiderChibi.png" style="float: right; max-width: 20%; margin-top: -10%"></h1>
 
-  <p style="font-size: 18px;">Hello, fellow traveller! <br><br> Greetings to the adventure of your lifetime. Together, we will travel in the realm of Dreams, where you will encounter strong opponents
-      that you have to defeat, in order to achieve the end-game. <br><br>
-      We hope that you will enjoy this experience and we look forward to see you on the battlefield!
+    <p style="font-size: 18px;">Hello, fellow traveller! <br><br> Greetings to the adventure of your lifetime. Together, we will travel in the realm of Dreams, where you will encounter strong opponents
+        that you have to defeat, in order to achieve the end-game. <br><br>
+        We hope that you will enjoy this experience and we look forward to see you on the battlefield!
 
-</p>
+    </p>
 </div>
 
 
