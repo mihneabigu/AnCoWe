@@ -1,0 +1,91 @@
+/*Header buttons & stuff*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-style: solid;
+    border-width: medium;
+    font-size: 15px;
+    font-family: Arial Black;
+}
+
+li {
+    float: left;
+    border-right:5px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+    border-left: 5px solid #bbb;
+    background-color:rgb(136, 84, 36);
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(209, 152, 98);
+}
+
+/*page content*/
+.wrapper {
+    background-color: bisque;
+    max-width: 45%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+    margin-top: 1%;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 10%;
+}
+
+/*footer*/
+.footer {
+    margin:auto;
+    background-color: brown;
+    width: 100%;
+    border-style: solid;
+    border-width: medium;
+    margin-top: 1%;
+}
+
+/*LOGIN REGISTER STUFF*/
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+label {
+    font-weight:bold;
+    width:100px;
+    font-size:14px;
+}
+.box {
+    border:#666666 solid 1px;
+}
+.row {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+}
+.column {
+    margin-right: 50px;
+    width: 50%;
+    display: inline-block;
+}
