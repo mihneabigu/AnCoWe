@@ -8,6 +8,21 @@
     session_start();
     $error = "";
     ?>
+
+    <ul>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="play.php">Play</a></li>
+        <li><a href="#">How-To</a></li>
+        <li><a href="#">Scoreboard</a></li>
+        <li><a href="about.php">About</a></li>
+        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
+            <li style="float:right"><a href="?logout">Logout</a></li>
+        <?php } else { ?>
+            <li style="float: right"><a href="register.php">Register</a></li>
+            <li style="float:right"><a href="login.php">Login</a></li>
+        <?php }; ?>
+    </ul>
+
 </head>
 
 <body background="img/bg.jpg">
@@ -31,7 +46,7 @@
     }
 ?>
 
-<div class="row">
+<div class="">
     <div  class="column" style = "width:300px; border: solid 1px #333333; background-color:bisque" align = "left">
         <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
 

@@ -16,6 +16,7 @@
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li style="float:right"><a href="?logout">Logout</a></li>
         <?php } else { ?>
+            <li style="float: right"><a href="register.php">Register</a></li>
             <li style="float:right"><a href="login.php">Login</a></li>
         <?php }; ?>
     </ul>
@@ -31,7 +32,7 @@
 <body background="img/bg.jpg">
 
 <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
-  <p align=right style="float:right; color:white">Welcome, <?php echo $_SESSION['login_user']?>~</p>
+    <div class="welcome" align=right>Welcome, <strong><?php echo $_SESSION['login_user']?></strong></div><br>
 <?php }; ?>
 
 <div class="wrapper">
@@ -55,7 +56,7 @@ The Father Superior listened to him with diginity, and, with a slight bend of th
 
 <div class="footer">
     <a href="https://github.com/mihneabigu/AnCoWe">
-        <h5 style="text-align:center"><img src="/img/git.png" style="margin-top:-10px;margin-bottom:-10px;max-width:3%;max-height:3%"></h3>
+        <h5 style="text-align:center"><img src="/img/git.png" style="margin-top:-10px;margin-bottom:-10px;max-width:3%;max-height:3%"></h5>
     </a>
 </div>
 </body>

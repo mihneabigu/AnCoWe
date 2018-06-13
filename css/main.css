@@ -39,6 +39,17 @@ li a:hover:not(.active) {
 }
 
 /*page content*/
+
+.welcome {
+    float: right;
+    width: auto;
+    padding: 10px;
+    border: 5px solid black;
+    margin-top: 10px;
+    background-color: white;
+    font-family: Hack, monospace;
+}
+
 .wrapper {
     background-color: bisque;
     max-width: 45%;
