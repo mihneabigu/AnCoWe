@@ -11,16 +11,16 @@ session_start();
     <link rel="icon" href="img/favicon.ico" type="image/ico">
 
     <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a class="active" href="play.php">Play</a></li>
-        <li><a href="#">How-To</a></li>
-        <li><a href="scoreboard.php">Scoreboard</a></li>
-        <li><a href="about.php">About</a></li>
+        <li><a href="/index.php">Home</a></li>
+        <li><a class="active" href="#">Play</a></li>
+        <li><a href="/howto.php">How-To</a></li>
+        <li><a href="/scoreboard.php">Scoreboard</a></li>
+        <li><a href="/about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
-            <li style="float:right"><a href="#">Logout</a></li>
+            <li style="float:right"><a href="/?logout">Logout</a></li>
         <?php } else { ?>
-            <li style="float:right"><a href="register.php">Register</a></li>
-            <li style="float:right"><a href="login.php">Login</a></li>
+            <li style="float:right"><a href="/register.php">Register</a></li>
+            <li style="float:right"><a href="/login.php">Login</a></li>
         <?php }; ?>
     </ul>
     <script data-main="js/app" src="js/libs/require.js"></script>

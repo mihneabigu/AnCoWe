@@ -12,7 +12,7 @@
     <ul>
         <li><a class="active" href="index.php">Home</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
-        <li><a href="Game/game.php" target="_blank">Play</a></li>
+        <li><a href="Game/game.php">Play</a></li>
         <?php }; ?>
         <li><a href="howto.php">How-To</a></li>
         <li><a href="scoreboard.php">Scoreboard</a></li>
