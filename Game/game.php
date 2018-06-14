@@ -8,11 +8,11 @@ session_start();
     <meta charset="UTF-8">
     <title>zzz</title>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="icon" href="img/favicon.ico" type="image/ico">
+    <link rel="icon" href="/img/favicon.ico" type="image/ico">
 
     <ul>
         <li><a href="/index.php">Home</a></li>
-        <li><a class="active" href="#">Play</a></li>
+        <li><a class="active" href="game.php">Play</a></li>
         <li><a href="/howto.php">How-To</a></li>
         <li><a href="/scoreboard.php">Scoreboard</a></li>
         <li><a href="/about.php">About</a></li>

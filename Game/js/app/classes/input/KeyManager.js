@@ -13,7 +13,7 @@ define(['Class'], function(Class){
             this.down = keys[83];       //S
             this.left = keys[65];       //A
             this.right = keys[68];       //D
-            this.space=keys[32]; //space
+            this.space=keys[72]; //h
             this.one=keys[49]; //1
             this.two=keys[50];//2
             this.three=keys[51];//3
