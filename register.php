@@ -12,9 +12,11 @@
 
     <ul>
         <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="play.php">Play</a></li>
+        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
+            <li><a href="Game/game.php" target="_blank">Play</a></li>
+        <?php }; ?>
         <li><a href="#">How-To</a></li>
-        <li><a href="#">Scoreboard</a></li>
+        <li><a href="scoreboard.php">Scoreboard</a></li>
         <li><a href="about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li style="float:right"><a href="?logout">Logout</a></li>
@@ -42,6 +44,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $password = $_POST['password'];
         $stmt = $conn->prepare("insert into users (username, email, password) values (?, ?, ?)");
         $stmt->bind_param("sss",$username, $email, $password);
+        $stmt->execute();
+        $stmt = $conn->prepare("select max(id) from users");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $nothing=0;
+        $check = "alabala";
+        $id = mysqli_fetch_assoc($result)['max(id)'];
+        $stmt = $conn->prepare("insert into game_state(id_user, score, checkpoint) values (?,?,?)");
+        $stmt->bind_param("iis",$id,$nothing, $check);
         $stmt->execute();
         header("location: login.php");
     }

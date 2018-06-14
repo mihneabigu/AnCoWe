@@ -9,12 +9,32 @@
     <?php
         include ("config.php");
         session_start();
-
+        $userScore = 0;
+        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+            $stmt = $conn->prepare("select g.score from game_state g join users u on g.id_user=u.id where username=?");
+            $stmt->bind_param("s", $username);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            if ($result->num_rows == 1){
+                $userScore = mysqli_fetch_assoc($result)['score'];
+            }
+        }
+        $stmt = $conn->prepare("select g.score, u.username  from game_state g join users u on g.id_user=u.id order by 1 DESC");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $array = array();
+        $index = 0;
+        while ($row = mysqli_fetch_assoc($result)){
+            $array[$index] = $row;
+            $index++;
+        }
     ?>
 
     <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="play.php">Play</a></li>
+        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
+            <li><a href="Game/game.php" target="_blank">Play</a></li>
+        <?php }; ?>
         <li><a href="#">How-To</a></li>
         <li><a class="active" href="scoreboard.php">Scoreboard</a></li>
         <li><a href="about.php">About</a></li>
@@ -41,25 +61,21 @@
 <?php }; ?>
 
 <div class="wrapper">
-
-
-
-    <div id="test" style="display: none"><?php echo $var; ?></div>
-
-    <!-- <a href="#" onclick="callPHP('message=Salut')">call PHP script</a> -->
-
-    <!--    <script>-->
-    <!--        var x = document.getElementById("test");-->
-    <!--        window.alert(x.textContent);-->
-    <!--    </script>-->
-
-    <h1 style="font-size: 50px;">WELCOME, ADVENTURER! <img src="img/spiderChibi.png" style="float: right; max-width: 20%; margin-top: -10%"></h1>
-
-    <p style="font-size: 18px;">Hello, fellow traveller! <br><br> Greetings to the adventure of your lifetime. Together, we will travel in the realm of Dreams, where you will encounter strong opponents
-        that you have to defeat, in order to achieve the end-game. <br><br>
-        We hope that you will enjoy this experience and we look forward to see you on the battlefield!
-
-    </p>
+    <img src="img/trofeu.png" style="margin-left: 38%; max-width: 20%">
+    <table class="scoreboard" style="font-size: 20px; font-family: Hack, monospace">
+        <tr>
+            <th>Username</th>
+            <th>Score</th>
+        </tr>
+        <?php
+            for ($i=0; $i < $index; $i++){
+                echo "<tr>";
+                echo "<td>".$array[$i]['username']."</td>";
+                echo "<td>".$array[$i]['score']."</td>";
+                echo "</tr>";
+            }
+        ?>
+    </table>
 </div>
 
 
