@@ -81,7 +81,7 @@ define(['Jquery', 'Class'], function ($, Class) {
     function createDisplay() {
         document.title = title;
         var body = document.body;
-        body.innerHTML = ("<canvas id='canvas' width='" + width + "' height='" + height + "'></canvas>");
+        //body.innerHTML = ("<canvas id='canvas' width='" + width + "' height='" + height + "'></canvas>");
         canvas = document.getElementById("canvas");
         graphics = canvas.getContext("2d");
         this.ctx = canvas.getContext("2d");
