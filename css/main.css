@@ -147,4 +147,11 @@ label {
     text-align: left;
     background-color: brown;
     color: white;
+
+/*Round images*/
+.rounded {
+    border-style: solid;
+    border-width: 1px white;
+    border-radius: 50%;
+    width: 10%;
 }
