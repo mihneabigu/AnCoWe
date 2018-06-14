@@ -39,7 +39,7 @@ session_start();
     <div class="welcome" align=right>Welcome, <strong><?php echo $_SESSION['login_user']?></strong></div><br>
 <?php }; ?>
 
-<div class="wrapper" style="margin-bottom:120px;">
+<div class="wrapper" style="margin-bottom:120px; width: fit-content">
     <canvas id='canvas' width=800 height=700 style="margin-left:-20px;border-radius:10%"></canvas>
 </div>
 

@@ -35,7 +35,7 @@
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li><a href="Game/game.php" target="_blank">Play</a></li>
         <?php }; ?>
-        <li><a href="#">How-To</a></li>
+        <li><a href="howto.php">How-To</a></li>
         <li><a class="active" href="scoreboard.php">Scoreboard</a></li>
         <li><a href="about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
