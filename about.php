@@ -26,8 +26,8 @@ curl_close($ch);
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="play.php">Play</a></li>
-        <li><a href="#">How-To</a></li>
-        <li><a href="#">Scoreboard</a></li>
+        <li><a href="howto.php">How-To</a></li>
+        <li><a href="scoreboard.php">Scoreboard</a></li>
         <li><a class="active" href="about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li style="float:right"><a href="?logout">Logout</a></li>
@@ -50,12 +50,27 @@ curl_close($ch);
   <p align=right style="float:right; color:white">Welcome, <?php echo $_SESSION['login_user']?>~</p>
 <?php }; ?>
 
-<div class="wrapper">
-    <img src="<?php echo $jsonArray['data']['results'][0]['thumbnail']['path'] . "." . $jsonArray['data']['results'][0]['thumbnail']['extension']; ?>" style="max-width: 35%; margin-left: 33%">
-  <p>
-      <?php echo $jsonArray['data']['results'][0]['description']; ?> <br><br>
-
-</p>
+<div class="wrapper" style="margin-bottom: 120px">
+    <h2 style="color:brown">If you can dream it, you can be it. Be a hero!</h2><hr color=black>
+    <img src="<?php echo $jsonArray['data']['results'][0]['thumbnail']['path'] . "." . $jsonArray['data']['results'][0]['thumbnail']['extension']; ?>" 
+    style="max-width: 35%; margin-left: 33%; border-radius: 30%">
+    <h3 style="color:brown"><strong>Character:</strong></h3> 
+    <p>Spiderman (Peter Parker)</p>
+    <h3 style="color:brown"><strong>Character lore:</strong></h3>
+    <p><?php echo $jsonArray['data']['results'][0]['description']; ?> <br><br></p>
+    <h3 style="color:brown">Our team:</h3><hr color=black>
+    <a href="https://github.com/mihneabigu">
+        <img class="rounded" src="img/mihnea.png">
+    </a>
+    <a href="https://github.com/NinjaSaph">
+        <img class="rounded" src="img/andra.png">
+    </a>
+    <a href="https://github.com/XKoutax">
+        <img class="rounded" src="img/andrei.png">
+    </a>
+    <a href="https://github.com/guraliucalex">
+        <img class="rounded" src="img/alex.png">
+    </a>
 </div>
 
 

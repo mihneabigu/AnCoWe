@@ -13,7 +13,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="play.php">Play</a></li>
         <li><a class="active" href="howto.php">How-To</a></li>
-        <li><a href="#">Scoreboard</a></li>
+        <li><a href="scoreboard.php">Scoreboard</a></li>
         <li><a href="about.php">About</a></li>
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) { ?>
             <li style="float:right"><a href="?logout">Logout</a></li>
