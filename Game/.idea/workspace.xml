@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="153e2320-775f-41e6-8778-bd7313122dda" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Launcher.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/Launcher.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/Game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="80" column="44" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/entities/Entity.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="73" column="133" selection-start-line="73" selection-start-column="108" selection-end-line="73" selection-end-column="133" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticEntity.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/entities/statics/StaticEntity.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameState.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/States/GameState.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Display.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/display/Display.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2397">
+              <caret line="141" column="22" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameCamera.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/gfx/GameCamera.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Handler.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/Handler.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="World.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/worlds/World.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3468">
+              <caret line="204" column="21" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/classes/entities/EntityManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>take</find>
+      <find>skeleton</find>
+      <find>getCollisionBounds</find>
+      <find>spawnCooldown</find>
+      <find>checkEntityCollision</find>
+      <find>cooldown</find>
+      <find>spellcooldown</find>
+      <find>getDa</find>
+      <find>takeDama</find>
+      <find>explosion</find>
+      <find>canvas</find>
+      <find>jade</find>
+      <find>width</find>
+      <find>firespellitem</find>
+      <find>slashitem</find>
+      <find>mana</find>
+      <find>tiles</find>
+      <find>fire</find>
+      <find>takeDamage</find>
+      <find>health</find>
+      <find>explos</find>
+      <find>boss2</find>
+      <find>getdamage</find>
+      <find>nonspell</find>
+      <find>damage</find>
+      <find>potion</find>
+      <find>manapo</find>
+      <find>coin</find>
+      <find>bluepo</find>
+      <find>alert</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Orb.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/statics/ManaPotion.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/SkeletBun.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/autoattack.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Slash.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/explosion.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/firespell.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Darkslash.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/statics/Darkfire.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/jadeslash.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/jadeslashitem.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Darkslashitem.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Explosionitem.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Firespellitem.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Slashitem.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/tiles/GrassTile2.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/tiles/StoneTile2.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/tiles/StoneTile3.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/tiles/TileLoader.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Key.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Door.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Boss.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/explosionboss.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/firespellBoss.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Boss2.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/jadeslashBoss.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/DarkslashBoss.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/EntityManager.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Boss3.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/DispenserEnemy.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Dispenserenemy.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Creature.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Dispenser.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Slashenemy.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/statics/Fire.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Coin.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/Game.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/Handler.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/input/KeyManager.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Portal.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/utils/Utils.js" />
+        <option value="$PROJECT_DIR$/js/app/main.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/Entity.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Player.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/display/Display.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Skeleton.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/entities/creatures/Bat.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/gfx/Assets.js" />
+        <option value="$PROJECT_DIR$/js/app/classes/worlds/World.js" />
+        <option value="$PROJECT_DIR$/res/worlds/world1.wrd" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1114" />
+    <option name="width" value="813" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="display" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="creatures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="gfx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="States" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="tiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="worlds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game-modif-a" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game-modif-a" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="worlds" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Game-modif\res\worlds" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Andy\sem2\Tehnologii_WEB\Game\js\app\classes" />
+      <recent name="D:\Andy\sem2\Tehnologii_WEB\Game\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.game.html">
+    <configuration name="game.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Game/game.html" />
+    <configuration name="require.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="require.js" working-dir="$PROJECT_DIR$/js/libs" />
+    <list>
+      <item itemvalue="JavaScript Debug.game.html" />
+      <item itemvalue="Node.js.require.js" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="153e2320-775f-41e6-8778-bd7313122dda" name="Default" comment="" />
+      <created>1527064507681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527064507681</updated>
+      <workItem from="1527064510027" duration="43000" />
+      <workItem from="1527064563525" duration="2446000" />
+      <workItem from="1527067028935" duration="24000" />
+      <workItem from="1527068200621" duration="4272000" />
+      <workItem from="1527325388321" duration="883000" />
+      <workItem from="1527326513359" duration="2489000" />
+      <workItem from="1528202694312" duration="11870000" />
+      <workItem from="1528309594117" duration="1338000" />
+      <workItem from="1528310969978" duration="2627000" />
+      <workItem from="1528368991693" duration="4638000" />
+      <workItem from="1528375508196" duration="550000" />
+      <workItem from="1528377330459" duration="4031000" />
+      <workItem from="1528454028188" duration="240000" />
+      <workItem from="1528455677271" duration="36000" />
+      <workItem from="1528456704363" duration="5108000" />
+      <workItem from="1528465687075" duration="4640000" />
+      <workItem from="1528553853344" duration="6081000" />
+      <workItem from="1528642719591" duration="1307000" />
+      <workItem from="1528646618191" duration="3888000" />
+      <workItem from="1528650811029" duration="5126000" />
+      <workItem from="1528656051112" duration="5061000" />
+      <workItem from="1528666716024" duration="10914000" />
+      <workItem from="1528721923589" duration="7345000" />
+      <workItem from="1528732768102" duration="13361000" />
+      <workItem from="1528749734093" duration="7216000" />
+      <workItem from="1528761841998" duration="833000" />
+      <workItem from="1528799227119" duration="68000" />
+      <workItem from="1528828146073" duration="7837000" />
+      <workItem from="1528836815314" duration="4476000" />
+      <workItem from="1528841903187" duration="797000" />
+      <workItem from="1528883537748" duration="11267000" />
+      <workItem from="1528896283492" duration="2193000" />
+      <workItem from="1528904060692" duration="7216000" />
+      <workItem from="1528922060205" duration="1828000" />
+      <workItem from="1528926773243" duration="1817000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="153694000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1114" y="0" width="813" height="1057" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3767742" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33227175" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33081895" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/app/classes/tiles/GrassTile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Key.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Door.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Darkslashitem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Explosionitem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Firespellitem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/tiles/TileLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/explosion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Boss.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1768">
+          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/jadeslashitem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Boss2.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Darkslash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/jadeslashBoss.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/DarkslashBoss.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/firespellBoss.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Boss3.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Dispenserenemy.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Dispenser.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Creature.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/explosionboss.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Slashenemy.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Slash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/SkeletBun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="73" column="34" lean-forward="true" selection-start-line="69" selection-start-column="15" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/autoattack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/statics/ManaPotion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="49" column="50" lean-forward="true" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/firespell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Coin.js" />
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/statics/Fire.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="3" lean-forward="true" selection-end-line="34" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/jadeslash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Portal.js" />
+    <entry file="file://$PROJECT_DIR$/.idea/Game.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/utils/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/gfx/Assets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="569" column="18" selection-end-line="587" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Skeleton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="141" column="51" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/creatures/Bat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="186" selection-start-column="186" selection-end-column="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/worlds/world1.wrd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/input/KeyManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/display/Display.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="22" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/gfx/GameCamera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/States/GameState.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/Handler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/Launcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="44" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/worlds/World.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3468">
+          <caret line="204" column="21" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/EntityManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/Entity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="73" column="133" selection-start-line="73" selection-start-column="108" selection-end-line="73" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/classes/entities/statics/StaticEntity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
