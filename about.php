@@ -58,7 +58,15 @@ curl_close($ch);
     <p>Spiderman (Peter Parker)</p>
     <h3 style="color:brown"><strong>Character lore:</strong></h3>
     <p><?php echo $jsonArray['data']['results'][0]['description']; ?> <br><br></p>
+    
+    <video width="720" controls autoplay>
+        <source src="video/spuder.mp4" type="video/mp4">
+        <source src="video/spuder.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+
     <h3 style="color:brown">Our team:</h3><hr color=black>
+    
     <a href="https://github.com/mihneabigu">
         <img class="rounded" src="img/mihnea.png">
     </a>

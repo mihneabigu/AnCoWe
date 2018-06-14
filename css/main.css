@@ -125,3 +125,11 @@ label {
     width: 50%;
     display: inline-block;
 }
+
+/*Round images*/
+.rounded {
+    border-style: solid;
+    border-width: 1px white;
+    border-radius: 50%;
+    width: 10%;
+}
