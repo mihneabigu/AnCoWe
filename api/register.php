@@ -11,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         echo "Username or Email already in use";
     } else {
         $password = $_POST['password'];
+        $password = password_hash($password, PASSWORD_DEFAULT);
         $stmt = $conn->prepare("insert into users (username, email, password) values (?, ?, ?)");
         $stmt->bind_param("sss",$username, $email, $password);
         $stmt->execute();

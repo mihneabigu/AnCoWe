@@ -2,19 +2,26 @@
 session_start();
 include ('config.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $stmt = $conn->prepare("select username from users where username=? and password=?");
-    $stmt->bind_param("ss", $username, $password);
+    $stmt = $conn->prepare("select password from users where username=?");
+
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
     if ($result->num_rows == 1){
-        $_SESSION['login_user'] = $username;
-        $_SESSION['loggedin'] = true;
-        echo "OK";
+        $result = mysqli_fetch_assoc($result);
+        $password = $_POST['password'];
+        if (password_verify($password, $result['password'])){
+            $_SESSION['login_user'] = $username;
+            $_SESSION['loggedin'] = true;
+            echo "OK";
+        } else {
+            $_SESSION['loggedin'] = false;
+            echo "Your password is incorrect!";
+        }
     } else {
         $_SESSION['loggedin'] = false;
-        echo "Your Login Name or Password is invalid";
+        echo "Your username is incorrect!";
     }
 }
 ?>
