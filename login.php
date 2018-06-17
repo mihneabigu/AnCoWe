@@ -4,10 +4,9 @@
     <title>zzz</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" href="img/favicon.ico" type="image/ico">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <?php
-    include ("config.php");
     session_start();
-    $error = "";
     ?>
 
     <ul>
@@ -30,41 +29,40 @@
 
 <body background="img/bg.jpg">
 
-<?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST"){
-        $stmt = $conn->prepare("select username from users where username=? and password=?");
-        $stmt->bind_param("ss", $username, $password);
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $stmt->execute();
-        $result = $stmt->get_result();
-        if ($result->num_rows == 1){
-            $_SESSION['login_user'] = $username;
-            $_SESSION['loggedin'] = true;
-            header("location: index.php");
-        } else {
-            $error = "Your Login Name or Password is invalid";
-            $_SESSION['loggedin'] = false;
-        }
-    }
-?>
 
 <div class="loginRegisterBox">
         <div style = "background-color:#333333; color:#FFFFFF; padding:3px; text-align: center"><b>Login</b></div>
 
         <div style = "margin:30px">
 
-            <form action = "" method = "post">
+            <form id="submit" action = "api/login.php" method = "post">
                 <label>UserName  : </label><input type = "text" name = "username" class = "box"/><br /><br />
                 <label>Password  : </label><input type = "password" name = "password" class = "box" /><br/><br />
                 <input type = "submit" value = " Submit " style="font-size: 20px"/><br>
             </form>
 
-            <div style = " color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-
+            <div id="response" style = " color:#cc0000; margin-top:10px"></div>
 
     </div>
 </div>
+
+<script>
+    $('#submit').submit(function() { // catch the form's submit event
+        $.ajax({ // create an AJAX call...
+            data: $(this).serialize(), // get the form data
+            type: $(this).attr('method'), // GET or POST
+            url: $(this).attr('action'), // the file to call
+            success: function(response) { // on success..
+                if (response == "OK"){
+                    document.location.href = 'index.php';
+                } else {
+                    $('#response').html(response);
+                }// update the DIV
+            }
+        });
+        return false; // cancel original event to prevent form submitting
+    });
+</script>
 
 </body>
 </html>

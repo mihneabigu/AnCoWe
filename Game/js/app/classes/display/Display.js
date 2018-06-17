@@ -14,6 +14,7 @@ define(['Jquery', 'Class'], function ($, Class) {
     var show_gold_y;
     var i=0;
     var j=0;
+    var checkpoint = 0;
     var Display = Class.extend({
         init: function (_title, _width, _height) {
             title = _title;
@@ -30,6 +31,15 @@ define(['Jquery', 'Class'], function ($, Class) {
         getTitle: function () {
             return title;
         },
+
+        getLevel: function () {
+            return level;
+        },
+
+        setLevel: function(newLevel) {
+            level = newLevel;
+        },
+
         getWidth: function () {
             return width;
         },
@@ -72,6 +82,10 @@ define(['Jquery', 'Class'], function ($, Class) {
             show_gold_x=_x;
             show_gold_y=_y;
             show_gold=50000;
+        },
+
+        showCheckpoint: function () {
+            checkpoint = 100000;
         }
 
 
@@ -87,6 +101,7 @@ define(['Jquery', 'Class'], function ($, Class) {
         this.ctx = canvas.getContext("2d");
 
     }
+
 
     /*
     //Getters
@@ -147,6 +162,13 @@ define(['Jquery', 'Class'], function ($, Class) {
             ctx.fillText("+10",show_gold_x,show_gold_y-j);
         }
 
+        if (checkpoint > 0){
+            checkpoint--;
+            ctx.fillStyle = "red";
+            ctx.font="60px Arial";
+
+            ctx.fillText("CHECKPOINT",width / 2 - 170, height / 2);
+        }
 
     };
 

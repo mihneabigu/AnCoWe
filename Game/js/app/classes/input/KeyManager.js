@@ -23,6 +23,7 @@ define(['Class'], function(Class){
             this.seven=keys[55];//7
             this.nine=keys[57];
             this.ooo=keys[79];
+            this.lll=keys[76];
 
         },
 

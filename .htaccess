@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteRule ^api/readCheckpoint.*$ api/readCheckpoint.php [NC,L]
+
+RewriteRule ^api/rules.*$ api/rules.php [NC,L]

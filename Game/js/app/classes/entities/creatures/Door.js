@@ -2,7 +2,7 @@
 define(['Creature','Assets'],function(Creature,Assets){
 
     var Door = Creature.extend({
-        init:function(_handler, _x, _y){
+        init:function(_handler, _x, _y, _id){
             this._super(_handler, _x, _y,Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
             this.assets = Assets.getAssets("door");
             this.bounds.x = 0;
@@ -13,6 +13,7 @@ define(['Creature','Assets'],function(Creature,Assets){
             this.collideable=1;
             this.opened=0;
             this.name="DOOR";
+            this.id = _id;
 
 
         },

@@ -18,6 +18,8 @@ define(['Creature', 'Assets', 'HealthBar', 'SkeletBun', 'Explosion', 'ManaBar', 
             this.health = 10;
             this.maxhealth = 10;
             this.saveCooldown = 0;
+            this.loadCooldown = 0;
+
 
             this.spelllearned1 = 0;
             this.spelllearned2 = 0;
@@ -226,7 +228,31 @@ define(['Creature', 'Assets', 'HealthBar', 'SkeletBun', 'Explosion', 'ManaBar', 
 
             if (this.handler.getKeyManager().ooo && this.saveCooldown==0) {
                 this.saveCooldown = 100;
-                Utils.callPHPSave("checkpointX="+this.checkpoint_x+"&checkpointY="+this.checkpoint_y);
+                Utils.callPHPSave("checkpointX="+this.checkpoint_x+"&checkpointY="+this.checkpoint_y+"&spell1="+this.spelllearned1+"&spell2="+this.spelllearned2+"&spell3="+this.spelllearned3+"&spell4="+this.spelllearned4+"&spell5="+this.spelllearned5+"&level="+this.handler.getDisplay().getLevel());
+            }
+
+            if (this.handler.getKeyManager().lll && this.loadCooldown == 0) {
+                this.loadCooldown = 100;
+
+                var json = Utils.loadFileAsString("/api/readCheckpoint.php");
+                json = JSON.parse(json);
+                this.x = json.checkpointX;
+                this.y = json.checkpointY;
+                this.checkpoint_x = json.checkpointX;
+                this.checkpoint_y = json.checkpointY;
+                this.spelllearned1 = json.spell1;
+                this.spelllearned2 = json.spell2;
+                this.spelllearned3 = json.spell3;
+                this.spelllearned4 = json.spell4;
+                this.spelllearned5 = json.spell5;
+                this.handler.getDisplay().setLevel(json.level);
+                var candidates = this.handler.getWorld().getEntityManager().getEntities();
+                for (var i = 0; i < candidates.length; i++) {
+                    var e = candidates[i];
+                    if (e.name=="DOOR" && e.id<this.handler.getDisplay().getLevel()){
+                        e.open();
+                    }
+                }
             }
 
 

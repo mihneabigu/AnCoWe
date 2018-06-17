@@ -88,10 +88,12 @@ define(['Class', 'Rectangle', 'Utils'], function (Class, Rectangle, Utils) {
                             if (this.name == "jucator" && e.name == "DOOR") {
 
                                 if (this.getKey()) {
+                                    //Utils.callPHPSave("checkpointX="+this.checkpoint_x+"&checkpointY="+this.checkpoint_y+"&spell1="+this.spelllearned1+"&spell2="+this.spelllearned2+"&spell3="+this.spelllearned3+"&spell4="+this.spelllearned4+"&spell5="+this.spelllearned5);
                                     this.useKey();
                                     e.open();
                                     this.updateCheckpoint();
                                     this.handler.getDisplay().updateLevel();
+                                    this.handler.getDisplay().showCheckpoint();
                                 }
 
                             }

@@ -4,6 +4,7 @@ define(['Class','TileLoader','Utils','EntityManager', 'Player','Tree','Fire','Sk
     function(Class,Tile,Utils,EntityManager,Player,Tree,Fire,Skeleton,SkeletBun,Orb,ManaPotion,Bat,
              Darkfire,Jadeslashitem,Explosionitem,Firespellitem,Slashitem,Darkslashitem,Door,Key,Boss,Boss2,Boss3,Dispenser,Portal){
         var tree;
+        var index = -1;
         var World = Class.extend({
             init:function( _path, _handler ){
                 this.tiles = []; // multi dimensional array.
@@ -104,9 +105,23 @@ define(['Class','TileLoader','Utils','EntityManager', 'Player','Tree','Fire','Sk
 
                         }
                         if (this.tiles[x][y] == 6) {
-                            this.entityManager.addEntity(new Door(this.handler, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT));
-                            this.tiles[x][y] = 0;
-
+                            index++;
+                            if (index == 0){
+                                this.entityManager.addEntity(new Door(this.handler, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT, 0));
+                                this.tiles[x][y] = 0;
+                            }
+                            if (index == 1){
+                                this.entityManager.addEntity(new Door(this.handler, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT, 3));
+                                this.tiles[x][y] = 0;
+                            }
+                            if (index == 2){
+                                this.entityManager.addEntity(new Door(this.handler, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT, 2));
+                                this.tiles[x][y] = 0;
+                            }
+                            if (index == 3){
+                                this.entityManager.addEntity(new Door(this.handler, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT, 1));
+                                this.tiles[x][y] = 0;
+                            }
                         }
                         if (this.tiles[x][y] == -1) {
                             this.entityManager.addEntity(new Boss(this.handler, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT));
