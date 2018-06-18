@@ -2,12 +2,26 @@ Options +FollowSymLinks
 
 RewriteEngine On
 
-RewriteRule ^api/readCheckpoint$ api/readCheckpoint.php [NC,L]
+RewriteRule ^api/readCheckpoint$ api/readCheckpoint.php [NC]
 
-RewriteRule ^api/rules$ api/rules.php [NC,L]
+RewriteRule ^api/rules$ api/rules.php [NC]
 
-RewriteRule ^api/users$ api/users.php [NC,L]
+RewriteRule ^api/users$ api/users.php [NC]
 
-RewriteRule ^api/users/([0-9]+) api/users.php?id=$1 [NC,L]
+RewriteRule ^api/users/([0-9]+) api/users.php?id=$1 [NC]
 
-RewriteRule ^api/scoreboard api/scoreboard.php [NC,L]
+RewriteRule ^api/scoreboard api/scoreboard.php [NC]
+
+RewriteRule ^home index.php [NC]
+
+RewriteRule ^scoreboard index.php?action=scoreboard [NC]
+
+RewriteRule ^howto index.php?action=howto [NC]
+
+RewriteRule ^about index.php?action=about [NC]
+
+RewriteRule ^game index.php?action=game [NC]
+
+RewriteRule ^login index.php?action=login [NC]
+
+RewriteRule ^register index.php?action=register [NC,L]
