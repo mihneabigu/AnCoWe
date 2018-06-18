@@ -19,10 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt->execute();
         $result = $stmt->get_result();
         $nothing=0;
-        $check = "alabala";
         $id = mysqli_fetch_assoc($result)['max(id)'];
-        $stmt = $conn->prepare("insert into game_state(id_user, score, checkpoint) values (?,?,?)");
-        $stmt->bind_param("iis",$id,$nothing, $check);
+        $stmt = $conn->prepare("insert into game_state(id_user, score) values (?,?)");
+        $stmt->bind_param("ii",$id,$nothing);
         $stmt->execute();
         echo "OK";
     }

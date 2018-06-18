@@ -49,7 +49,7 @@ class Controller {
                 if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password'])){
                     $response = $this->model->register($_POST['username'], $_POST['email'], $_POST['password']);
                     if ($response == "OK"){
-                        header('location: home/login');
+                        header('location: login');
                     } else {
                         include 'view/register.php';
                     }
