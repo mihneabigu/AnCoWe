@@ -7,7 +7,7 @@ class Model {
 
     public function getMarvelDesc(){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/marvel.php");
+        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/marvel/read.php");
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $output = curl_exec($ch);
@@ -17,7 +17,7 @@ class Model {
 
     public function getRules(){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/rules.php");
+        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/rules/read.php");
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $output = curl_exec($ch);
@@ -27,7 +27,7 @@ class Model {
 
     public function getScoreboard(){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/scoreboard.php");
+        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/scoreboard/read.php");
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $output = curl_exec($ch);
@@ -37,7 +37,7 @@ class Model {
 
     public function login($username, $password){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/login.php");
+        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/users/login.php");
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);
@@ -49,7 +49,7 @@ class Model {
 
     public function register($username, $email, $password){
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/register.php");
+        curl_setopt($ch, CURLOPT_URL, $_SERVER['SERVER_NAME']."/api/users/create.php");
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);

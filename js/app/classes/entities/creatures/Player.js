@@ -227,14 +227,14 @@ define(['Creature', 'Assets', 'HealthBar', 'SkeletBun', 'Explosion', 'ManaBar', 
             }
 
             if (this.handler.getKeyManager().ooo && this.saveCooldown==0) {
-                this.saveCooldown = 100;
+                this.handler.getDisplay().showSaveScreen();
                 Utils.callPHPSave("checkpointX="+this.checkpoint_x+"&checkpointY="+this.checkpoint_y+"&spell1="+this.spelllearned1+"&spell2="+this.spelllearned2+"&spell3="+this.spelllearned3+"&spell4="+this.spelllearned4+"&spell5="+this.spelllearned5+"&level="+this.handler.getDisplay().getLevel());
             }
 
             if (this.handler.getKeyManager().lll && this.loadCooldown == 0) {
-                this.loadCooldown = 100;
+                this.handler.getDisplay().showLoadScreen();
 
-                var json = Utils.loadFileAsString("/api/readCheckpoint.php");
+                var json = Utils.loadFileAsString("/api/gamestate/readCheckpoint.php");
                 json = JSON.parse(json);
                 this.x = json.checkpointX;
                 this.y = json.checkpointY;
@@ -325,7 +325,7 @@ define(['Creature', 'Assets', 'HealthBar', 'SkeletBun', 'Explosion', 'ManaBar', 
                     {
                         this.delete();
                         Utils.callPHP("message=" + this.handler.getDisplay().getScore());
-                        console.log("am apelat callphp");
+                        //console.log("am apelat callphp");
                     }
                 }
             }

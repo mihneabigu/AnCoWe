@@ -31,22 +31,26 @@ class Controller {
             }
             if ($_GET['action'] == "login"){
                 $response = "";
-                if (isset($_POST['username']) && isset($_POST['password'])){
+                if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['username']) && !empty($_POST['password'])){
                     $response = $this->model->login($_POST['username'], $_POST['password']);
                     if ($response == "OK"){
-                        $_SESSION['loggedin'] = true;
                         $_SESSION['login_user'] = $_POST['username'];
+                        $_SESSION['loggedin'] = true;
                         header('location: home');
                     } else {
+                        $_SESSION['loggedin'] = false;
                         include 'view/login.php';
                     }
+                    unset($_POST['username']);
+                    unset($_POST['password']);
                 } else {
+                    $_SESSION['loggedin'] = false;
                     include 'view/login.php';
                 }
             }
             if ($_GET['action'] == "register"){
                 $response = "";
-                if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password'])){
+                if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['email'])){
                     $response = $this->model->register($_POST['username'], $_POST['email'], $_POST['password']);
                     if ($response == "OK"){
                         header('location: login');

@@ -23,11 +23,11 @@ define(['Jquery'], function ($) {
 
     Utils.callPHP = function(params){
         var httpc = new XMLHttpRequest(); // simplified for clarity
-        var url = "/api/writeScore.php";
+        var url = "/api/gamestate/writeScore.php";
         httpc.open("POST", url, true); // sending as POST
 
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.setRequestHeader("Content-Length", params.length); // POST request MUST have a Content-Length header (as per HTTP/1.1)
+        // httpc.setRequestHeader("Content-Length", params.length); // POST request MUST have a Content-Length header (as per HTTP/1.1)
 
 
         httpc.onreadystatechange = function() { //Call a function when the state changes.
@@ -41,11 +41,11 @@ define(['Jquery'], function ($) {
 
     Utils.callPHPSave = function(params){
         var httpc = new XMLHttpRequest(); // simplified for clarity
-        var url = "/api/writeCheckpoint.php";
+        var url = "/api/gamestate/writeCheckpoint.php";
         httpc.open("POST", url, true); // sending as POST
 
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.setRequestHeader("Content-Length", params.length); // POST request MUST have a Content-Length header (as per HTTP/1.1)
+        // httpc.setRequestHeader("Content-Length", params.length); // POST request MUST have a Content-Length header (as per HTTP/1.1)
 
 
         httpc.onreadystatechange = function() { //Call a function when the state changes.

@@ -132,9 +132,6 @@ define(['Class', 'Rectangle', 'Utils'], function (Class, Rectangle, Utils) {
 
                             }
 
-
-
-
                         }
 
                         if (e.collideable == 1 && this.collideable == 1)

@@ -3,6 +3,8 @@ define(['Jquery', 'Class'], function ($, Class) {
     //Private Variables
     var canvas, title, width, height, graphics;
 
+    var loadScreen = 0;
+    var saveScreen = 0;
     var score = 0;
     var scoreTime = 0;
     var level = 0;
@@ -61,6 +63,15 @@ define(['Jquery', 'Class'], function ($, Class) {
         showDeathScreen: function () {
             deathScreen = 100000;
         },
+
+        showLoadScreen: function () {
+            loadScreen = 100000;
+        },
+
+        showSaveScreen: function () {
+            saveScreen = 100000;
+        },
+
         showWinScreen: function () {
             winScreen = 100000;
         },
@@ -143,6 +154,9 @@ define(['Jquery', 'Class'], function ($, Class) {
             ctx.fillText("YOU WIN!! ", width / 2 - 170, height / 2);
 
         }
+
+
+
         if(lives == 0){
             ctx.fillStyle = "red";
             ctx.font = "60px Arial";
@@ -168,6 +182,22 @@ define(['Jquery', 'Class'], function ($, Class) {
             ctx.font="60px Arial";
 
             ctx.fillText("CHECKPOINT",width / 2 - 170, height / 2);
+        }
+
+        if (loadScreen > 0){
+            loadScreen--;
+            ctx.fillStyle = "red";
+            ctx.font="60px Arial";
+
+            ctx.fillText("GAME LOADED",width / 2 - 170, height / 2);
+        }
+
+        if (saveScreen > 0){
+            saveScreen--;
+            ctx.fillStyle = "red";
+            ctx.font="60px Arial";
+
+            ctx.fillText("GAME SAVED",width / 2 - 170, height / 2);
         }
 
     };
